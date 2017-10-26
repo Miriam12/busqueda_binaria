@@ -48,13 +48,11 @@ int main(int argc, char** argv) {
 				if (band==true){
 					printf("El valor fue encontrado en la posicion %d. \n", posicion+1);
 				}
-				if(band==false){
-			    printf("El valor No fue encontrado");
-			    printf("\n");
+				else{
+					printf("El valor que buscas no existe. \n");
 				}
-					system("pause");
-			
-			}		    
+			}
+    	system("pause");
 		system("cls");
 	return 0;
 }
