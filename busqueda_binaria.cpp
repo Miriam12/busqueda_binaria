@@ -36,7 +36,7 @@ int main(int argc, char** argv) {
 	printf("Que numero deseas buscar:")	;
 	scanf("%d",&num);
 	
-	for(int i=0;i<=4;i++){
+	for(int i=0;i<5;i++){
 					if (datos[i]==num){
 						band=true;
 						posicion=i;
@@ -48,12 +48,13 @@ int main(int argc, char** argv) {
 				if (band==true){
 					printf("El valor fue encontrado en la posicion %d. \n", posicion+1);
 				}
-			
-				else{
-					printf("El valor que buscas no existe. \n");
+				if(band==false){
+			    printf("El valor No fue encontrado");
+			    printf("\n");
 				}
-			}
-    	system("pause");
+					system("pause");
+			
+			}		    
 		system("cls");
 	return 0;
 }
